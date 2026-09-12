@@ -7,4 +7,278 @@
 html, body {
     height: 100%;
     width: 100%;
+    background-color: #E85A00;
+    font-family: sans-serif;
+    position: relative;
 }
+
+body::after{
+    content: "";
+    height: 100%;
+    position: fixed;
+    width: 50%;
+    top: 20px;
+    left: 350px;
+    background-color: #FF9A1F;
+    border-radius: 70%;
+    filter: blur(60px);
+    pointer-events: none;
+}
+
+nav{
+    height: 10%;
+    width: 100%;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 4%;
+}
+
+.navright{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.navright div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    color: black;
+    padding: 10px 20px;
+    font-weight: 800;
+}
+
+.buttons{
+    position: relative;
+    z-index: 9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    cursor: pointer;
+
+}
+
+.buttons button{
+    cursor: pointer !important;
+}
+
+.products{
+    background-color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    color: black;
+    font-weight: 600;
+}
+
+.custom{
+    background-color: rgba(255, 255, 255, 0.466);
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    color: white;
+}
+
+main{
+    width: auto;
+    height: 55%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 8%;
+    
+}
+
+.dashboard{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 4%;
+    position: relative;
+    z-index: 9;
+}
+
+.greatness{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: white;
+
+}
+
+.greatness h2{
+    font-size: 3.5vmax;
+    font-weight: 900;
+}
+
+.greatness>p{
+    font-size: 1.5vmax;
+}
+
+.heading{
+    /* text-align: center; */
+    margin-right: 40px;
+}
+
+.heading h1{
+    margin-left: 15px;
+    height: 100%;
+    font-size: 24vmax;
+    color: white;
+    font-weight: 900;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    /* font-family: "Notable", sans-serif; */
+    font-weight: 900;
+}
+
+.shoe{
+    height: 90%;
+    width: 60%;
+    align-self: center;
+}
+
+.shoe > img{
+    height: 60%;
+    width: 30%;
+    position: absolute;
+    z-index: 10;
+    top: 200px;
+    left: 500px;
+    
+}
+
+.color{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    gap: 10px;
+}
+
+.colors{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+}
+
+.sizes{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+}
+
+.cyan{
+    height: 40px;
+    width: 40px;
+    border-radius: 50px;
+    background-color: #42CFC7;
+}
+
+.orange{
+    height: 40px;
+    width: 40px;
+    border-radius: 50px;
+    background-color: #FF7900;
+    border: 1px solid white;
+    padding: 7px;
+}
+
+.red{
+    height: 40px;
+    width: 40px;
+    border-radius: 50px;
+    background-color: #F20A3D;
+}
+
+.forty{
+    text-align: center;
+    padding-top: 10%;
+    height: 40px;
+    width: 40px;
+    border-radius: 50px;
+    border: 1px solid white;
+}
+
+.forty2{
+    text-align: center;
+    padding-top: 10%;
+    height: 40px;
+    width: 40px;
+    border-radius: 50px;
+    border: 1px solid white;
+}
+
+.forty4{
+    text-align: center;
+    padding-top: 10%;
+    height: 40px;
+    width: 40px;
+    border-radius: 50px;
+    border: 1px solid white;
+}
+
+footer{
+    height: 10%;
+    width: 100%;
+    position: relative;
+    z-index: 9;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 3%;
+}
+
+.icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.sneakers{
+    height: 100%;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.horizontal{
+    position: relative;
+    z-index: 9;
+    background-color: white;
+    height: 1px;
+    width: 80px;
+}
+
+.sneakers>p{
+    width: fit-content;
+    font-size: 14px;
+    color: white;
+}
+
+
+.seeproduct{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color: black;
+    font-weight: 800;
+    background-color: white;
+    padding: 10px 20px;
+    border-radius: 50px;
+}
+
