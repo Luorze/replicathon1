@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -87,12 +89,13 @@ nav{
 }
 
 main{
-    width: auto;
-    height: 55%;
+    width: 100%;
+    height: 60%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-bottom: 8%;
+    margin-bottom: 5%;
+    position: relative;
     
 }
 
@@ -101,8 +104,8 @@ main{
     justify-content: space-between;
     align-items: center;
     padding: 50px 4%;
-    position: relative;
     z-index: 9;
+    gap: 60px;
 }
 
 .greatness{
@@ -114,43 +117,51 @@ main{
 }
 
 .greatness h2{
-    font-size: 3.5vmax;
-    font-weight: 900;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 4.8vmax;
+    line-height: 0.9;
+    letter-spacing: 5px;
 }
 
 .greatness>p{
-    font-size: 1.5vmax;
+    width: 300px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 300;
+    line-height: 1.35;
 }
 
 .heading{
-    /* text-align: center; */
-    margin-right: 40px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-45%);
+    z-index: 1;
+    margin: 0;
 }
 
 .heading h1{
-    margin-left: 15px;
-    height: 100%;
-    font-size: 24vmax;
+    font-size: 24rem;
     color: white;
     font-weight: 900;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    /* font-family: "Notable", sans-serif; */
-    font-weight: 900;
+    font-family: "Bebas Neue", sans-serif;
 }
 
 .shoe{
     height: 90%;
-    width: 60%;
+    width: 30%;
     align-self: center;
+    position: fixed;
+    z-index: 10;
+    top: 25%;
 }
 
 .shoe > img{
-    height: 60%;
-    width: 30%;
+    height: auto;
+    width: 100%;
     position: absolute;
     z-index: 10;
-    top: 200px;
-    left: 500px;
+    /* top: 200px;
+    left: 500px; */
     
 }
 
@@ -162,6 +173,7 @@ main{
     align-items: center;
     color: white;
     gap: 10px;
+    margin-right: 4%;
 }
 
 .colors{
@@ -171,11 +183,21 @@ main{
     gap: 5px;
 }
 
+.colors div{
+    transition: transform 0.3s ease-in-out;
+
+}
+
 .sizes{
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 5px;
+}
+
+.sizes div{
+    transition: transform 0.3s ease-in-out;
+
 }
 
 .cyan{
@@ -191,7 +213,7 @@ main{
     border-radius: 50px;
     background-color: #FF7900;
     border: 1px solid white;
-    padding: 7px;
+    
 }
 
 .red{
@@ -199,6 +221,16 @@ main{
     width: 40px;
     border-radius: 50px;
     background-color: #F20A3D;
+}
+
+.colors div:hover{
+    transform: scale(110%, 110%);
+    cursor: pointer;
+}
+
+.sizes div:hover{
+    transform: scale(110%, 110%);
+    cursor: pointer;
 }
 
 .forty{
@@ -282,3 +314,10 @@ footer{
     border-radius: 50px;
 }
 
+
+.buttons button{
+    transform: scale(110%, 110%);
+    position: relative;
+    z-index: 10;
+    
+}
